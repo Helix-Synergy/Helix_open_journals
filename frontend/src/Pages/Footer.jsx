@@ -24,11 +24,11 @@ const Footer = () => {
   useEffect(() => {
     const fetchVisitorCount = async () => {
       try {
-        const hasVisited = sessionStorage.getItem("hasVisited");
+        const hasVisited = localStorage.getItem("hasVisited");
         let res;
         if (!hasVisited) {
           res = await axios.post(`${api}/visitor/increment`);
-          sessionStorage.setItem("hasVisited", "true");
+          localStorage.setItem("hasVisited", "true");
         } else {
           res = await axios.get(`${api}/visitor/count`);
         }
@@ -76,10 +76,10 @@ const Footer = () => {
           <div className="space-y-6">
             <Link to="/" className="inline-flex items-center gap-3">
               <img
-                src="/Images/image.png"
+                src="/Images/image.webp"
                 alt="Helix Open Access Journals"
                 className="h-24 w-auto object-contain ml-5"
-              />
+              loading="lazy" />
             </Link>
 
             <p className="text-base text-gray-400 leading-relaxed text-justify">

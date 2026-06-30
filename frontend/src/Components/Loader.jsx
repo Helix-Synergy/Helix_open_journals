@@ -41,7 +41,7 @@ const Loader = () => {
                 className="relative bg-white rounded-full p-6 shadow-2xl shadow-indigo-500/20"
             >
                 <motion.img
-                    src="/Images/HOAJ.png"
+                    src="/Images/HOAJ.webp"
                     alt="Helix Journals Logo"
                     className="w-24 h-24 object-contain relative z-10"
                     animate={{ 

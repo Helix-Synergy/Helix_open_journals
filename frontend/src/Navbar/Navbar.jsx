@@ -49,10 +49,10 @@ const Navbar = () => {
           {/* Logo & Brand */}
           <div className="flex items-center gap-3 shrink-0 cursor-pointer">
             <img
-              src="/Images/Helix Journals.png"
+              src="/Images/Helix Journals.webp"
               alt="Helix Journals Logo"
               className="h-40 w-40 object-contain hover:scale-105 transition-transform duration-300"
-            />
+            loading="lazy" />
           </div>
 
           {/* Desktop Navigation */}
@@ -110,7 +110,7 @@ const Navbar = () => {
         <div className="flex flex-col h-full bg-white">
           <div className="flex items-center justify-between px-4 pt-5 pb-4 border-b border-gray-100">
              <div className="flex items-center gap-2">
-              <img src="/Images/Helix Journals.png" alt="Logo" className="h-12 w-auto" />
+              <img src="/Images/Helix Journals.webp" alt="Logo" className="h-12 w-auto" loading="lazy" />
              </div>
             <button
               onClick={() => setOpen(false)}

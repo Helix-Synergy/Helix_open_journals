@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { ShieldCheck, FileText, Users, AlertTriangle, Database, BookOpen, Scale, Gavel } from 'lucide-react';
+import SEO from '../Components/SEO';
+
 
 const EthicsCard = ({ title, description, icon, color }) => {
     const ref = useRef(null);
@@ -47,6 +49,7 @@ const EthicsCard = ({ title, description, icon, color }) => {
             }}
             className="relative h-full w-full rounded-xl bg-white p-8 shadow-xl border border-slate-100 group perspective-1000"
         >
+        <SEO title="Publications Ethics" url="/ethics" />
             <div 
                 style={{ 
                     transform: "translateZ(75px)", 

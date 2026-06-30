@@ -1,4 +1,5 @@
 import React from "react";
+import SEO from '../Components/SEO';
 import {
   FileText,
   ClipboardList,
@@ -12,15 +13,14 @@ import {
 const ForAuthors = () => {
   return (
     <div className="pt-28 space-y-24">
-
-      {/* HERO */}
+      <SEO title="For Authors" url="/for-authors" />
       <div className="relative w-full h-[80vh] rounded-2xl overflow-hidden">
         <img
-          src="/Images/ForAuthors.jpg"
+          src="/Images/ForAuthors.webp"
           alt="For Authors"
           className="w-full h-full object-cover"
           loading="eager"
-          fetchpriority="high"
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
 

@@ -19,6 +19,8 @@ import {
 } from "lucide-react";
 import axios from "axios";
 import { toast } from "react-toastify";
+import SEO from '../Components/SEO';
+
 const api=import.meta.env.VITE_JOURNALS_FORM_API
 const InputField = ({ label, icon: Icon, type = "text", textarea = false }) => {
   const [focused, setFocused] = useState(false);
@@ -26,6 +28,7 @@ const InputField = ({ label, icon: Icon, type = "text", textarea = false }) => {
 
   return (
     <div className="relative mb-6">
+        <SEO title="Contact Us" url="/contact" />
       <motion.div
         animate={{
           borderColor: focused

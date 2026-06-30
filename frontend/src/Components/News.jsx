@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Megaphone, FileText, TrendingUp, Award, Calendar, ArrowRight, Star, Bell } from 'lucide-react';
+import SEO from '../Components/SEO';
+
 
 const NewsCard = ({ category, title, date, description, icon: Icon, colorClass, delay, span }) => {
     return (
@@ -11,6 +13,7 @@ const NewsCard = ({ category, title, date, description, icon: Icon, colorClass, 
             whileHover={{ y: -5, scale: 1.01 }}
             className={`group relative p-8 rounded-3xl bg-white border border-slate-100 shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col ${span}`}
         >
+        <SEO title="News" url="/news" />
             <div className={`absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity duration-300 transform group-hover:scale-110 group-hover:-rotate-12`}>
                 <Icon className={`w-32 h-32 ${colorClass}`} />
             </div>

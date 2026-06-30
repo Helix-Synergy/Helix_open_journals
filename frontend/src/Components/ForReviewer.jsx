@@ -2,6 +2,8 @@ import React from "react";
 import { ShieldCheck, Clock, Scale, Lock, Award, Globe, UserPlus } from "lucide-react";
 import { FaOrcid } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import SEO from '../Components/SEO';
+
 
 const ForReviewer = () => {
   const navigate=useNavigate();
@@ -10,6 +12,7 @@ navigate("/contact")
   }
   return (
     <section className="pt-28 pb-20 bg-gradient-to-br from-slate-50 via-white to-sky-50 text-slate-900">
+        <SEO title="For Reviewers" url="/for-reviewers" />
       <div className="max-w-6xl mx-auto px-6 space-y-16">
 
         {/* Header */}

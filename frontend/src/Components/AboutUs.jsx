@@ -1,9 +1,12 @@
 import React from "react";
 import { BookOpen, Target, FileCheck, Send ,Landmark,MessageSquareCode  } from "lucide-react";
+import SEO from '../Components/SEO';
+
 
 const AboutUs = () => {
   return (
     <div className="pt-24 pb-16 px-4 sm:px-8 lg:px-20 bg-gray-50">
+        <SEO title="About Us" url="/about" />
       <div className="max-w-6xl mx-auto space-y-16">
 
         {/* About Section */}

@@ -1,8 +1,11 @@
 import React from "react";
+import SEO from '../Components/SEO';
+
 
 const JournalPortfolio = () => {
   return (
     <div className="pt-28 pb-20 px-4 max-w-6xl mx-auto space-y-16">
+        <SEO title="Journals Portfolio" url="/journals" />
 
       {/* Overview */}
       <section className="text-center space-y-4">
@@ -50,10 +53,10 @@ const JournalPortfolio = () => {
         </div>
         <div>
         <img
-  src="/Images/journalsimage.jpg"
+  src="/Images/journalsimage.webp"
   alt="Journal categories"
   className="w-full md:w-[400px] h-60 md:h-80 object-cover rounded-xl shadow-lg"
-/>
+loading="lazy" />
         </div>
         </div>
       </section>

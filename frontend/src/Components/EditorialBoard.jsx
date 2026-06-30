@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { University, Search, Fingerprint, BookOpen, UserCheck, Award, Globe } from 'lucide-react';
+import SEO from '../Components/SEO';
+
 
 const InfoCard = ({ text, icon: Icon, index }) => {
     const ref = useRef(null);
@@ -46,6 +48,7 @@ const InfoCard = ({ text, icon: Icon, index }) => {
             }}
             className="group relative h-full bg-white rounded-2xl p-6 border border-slate-100 shadow-xl perspective-1000 cursor-pointer"
         >
+        <SEO title="Editorial Board" url="/editorial-board" />
              <div 
                 style={{ transform: "translateZ(50px)", transformStyle: "preserve-3d" }}
                 className="flex items-center gap-4"
@@ -123,7 +126,7 @@ const EditorialBoard = () => {
                             
                              {/* The Image */}
                             <motion.img 
-                                src="/Images/Editorial.jpg" 
+                                src="/Images/Editorial.webp" 
                                 alt="Editorial Board" 
                                 className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105"
                                 style={{
